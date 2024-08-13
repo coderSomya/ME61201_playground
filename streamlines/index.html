@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamline Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Streamline Analyzer</h1>
+    <form id="velocity-form">
+        <label for="vx">Vx Function (dx/dt):</label>
+        <input type="text" id="vx" placeholder="e.g., y" required>
+        
+        <label for="vy">Vy Function (dy/dt):</label>
+        <input type="text" id="vy" placeholder="e.g., -x" required>
+        
+        <label for="start-x">Starting X:</label>
+        <input type="number" id="start-x" required>
+        
+        <label for="start-y">Starting Y:</label>
+        <input type="number" id="start-y" required>
+        
+        <label for="time-step">Time Step (dt):</label>
+        <input type="number" id="time-step" step="0.01" required>
+        
+        <label for="duration">Duration:</label>
+        <input type="number" id="duration" required>
+        
+        <button type="submit">Generate Streamline</button>
+    </form>
+    <canvas id="streamline-canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
