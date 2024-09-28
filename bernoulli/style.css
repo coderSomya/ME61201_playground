@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    height: 200px;
+    border: 2px solid #555;
+    background: #e0e0e0;
+}
+
+.pipe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #b0c4de;
+}
+
+.pipe-flow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 255, 0.6);
+    height: 100%;
+    transition: width 0.2s ease;
+}
+
+.pipe-end {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.point {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+#pointA {
+    left: 20px;
+    top: 0;
+}
+
+#pointB {
+    right: 20px;
+    top: 0;
+}
+
+.controls {
+    margin-top: 20px;
+}

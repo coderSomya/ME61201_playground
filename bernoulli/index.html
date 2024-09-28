@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bernoulli's Experiment Simulation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="pipe">
+        <div id="pipeFlow" class="pipe-flow"></div>
+        <div id="pipeEnd" class="pipe-end" draggable="true"></div>
+        <div id="pointA" class="point">A</div>
+        <div id="pointB" class="point">B</div>
+      </div>
+    </div>
+    <div class="controls">
+      <h3>Control Point A</h3>
+      <label
+        >Pressure:
+        <input type="range" id="pressureA" min="0" max="200000" value="101325"
+      /></label>
+      <span id="pressureValueA">101325</span>
+      <br />
+      <label
+        >Velocity:
+        <input type="range" id="velocityA" min="0" max="50" value="10"
+      /></label>
+      <span id="velocityValueA">10</span>
+      <br />
+      <label>Height: <span id="heightValueA">0</span></label>
+      <br />
+      <h3>Control Point B</h3>
+      <label
+        >Pressure:
+        <input type="range" id="pressureB" min="0" max="200000" value="101325"
+      /></label>
+      <span id="pressureValueB">101325</span>
+      <br />
+      <label
+        >Velocity:
+        <input type="range" id="velocityB" min="0" max="50" value="15"
+      /></label>
+      <span id="velocityValueB">15</span>
+      <br />
+      <label>Height: <span id="heightValueB">0</span></label>
+    </div>
+    <script src="flow.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
